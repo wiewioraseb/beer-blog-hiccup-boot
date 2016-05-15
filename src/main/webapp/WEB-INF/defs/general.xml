@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<!-- Comes from http://tiles.apache.org/framework/tutorial/basic/pages.html -->
+<tiles-definitions>
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common"> <!-- index - index.jsp -->
+		<put-attribute name="title"
+			value="TITLE in index which extends common lol" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="current_active" value="index" />
+	</definition>
+
+	<definition name="log-in" extends="common"> 
+		<put-attribute name="title" value="about TITLE" />
+		<put-attribute name="body" value="/WEB-INF/jsp/log-in.jsp" />
+		<put-attribute name="current_active" value="log-in" />
+	</definition>
+
+	<definition name="welcome" extends="common">
+		<put-attribute name="title" value="welcome TITLE" />
+		<put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+		<put-attribute name="current_active" value="welcome" />
+	</definition>
+	
+	<definition name="contact" extends="common">
+		<put-attribute name="title" value="contact TITLE" />
+		<put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
+		<put-attribute name="current_active" value="contact" />
+	</definition>
+
+	<definition name="users" extends="common"> 
+		<put-attribute name="title" value="users jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+		<put-attribute name="current_active" value="users" />
+	</definition>
+
+	<definition name="user-detail" extends="common">
+		<put-attribute name="title" value="users-detail jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-detail.jsp" />
+		<put-attribute name="current_active" value="users" />
+	</definition>
+	
+	<definition name="user-register" extends="common">
+		<put-attribute name="title" value="users-register jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp" />
+		<put-attribute name="current_active" value="register" />
+	</definition>
+
+</tiles-definitions>
