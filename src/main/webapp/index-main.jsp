@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<title>Spring MVC Tutorial Series by Crunchify.com</title>
+<title>Spring MVC App</title>
 <style type="text/css">
 body {
 	background-size:cover;
